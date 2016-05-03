@@ -30,7 +30,8 @@ CMAcceleration和userAcceleration，（文档中这么解释：Returns the accel
  CMMotionManager *motionManager = [[CMMotionManager alloc] init];
  
 2.判断是设备是否可以使用，然后进行检测，并进行改变水波。
-if (motionManager.deviceMotionAvailable) {
+    
+    if (motionManager.deviceMotionAvailable) {
         [motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue]
                                            withHandler:^(CMDeviceMotion * _Nullable motion, 
                                                          NSError * _Nullable error)
